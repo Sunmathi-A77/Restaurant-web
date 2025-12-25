@@ -1,0 +1,54 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+  <section class="cart-section">
+    <h1>Your <span class="highlight">Cart</span></h1>
+    <div id="cart-container"></div>
+    <h2 id="total"></h2>
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <script src="cart.js"></script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+  <div class="background-image"></div>
+  
+  <section class="cart-section">
+    <h1>Your <span class="highlight">Cart</span></h1>
+    <div id="cart-container"></div>
+    <h2 id="total"></h2>
+
+    <!-- Billing Information Section -->
+    <div id="billing-section">
+      <h3>Billing Information</h3>
+      <form id="billing-form">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="text" id="address" placeholder="Shipping Address" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="tel" id="phone" placeholder="Phone Number" required />
+        <button type="button" onclick="submitBilling()">Submit Billing</button>
+      </form>
+    </div>
+
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <script src="cart.js"></script>
+</body>
+</html>

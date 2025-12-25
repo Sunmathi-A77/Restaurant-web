@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Delicious Restaurant</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <!-- 🍽 Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="video/food-motion.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Login/Signup Form Container -->
+  <div class="container">
+    <h1 id="form-title">Login</h1>
+
+    <!-- Login Form -->
+    <form id="login-form" onsubmit="login(event)">
+      <input type="email" id="login-email" placeholder="Email" required />
+      <input type="password" id="login-password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- Signup Form -->
+    <form id="signup-form" style="display:none;" onsubmit="signup(event)">
+      <input type="text" id="signup-name" placeholder="Name" required />
+      <input type="email" id="signup-email" placeholder="Email" required />
+      <input type="password" id="signup-password" placeholder="Password" required />
+      <input type="date" id="signup-dob" required />
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <p class="toggle-text">
+      Don't have an account? <a href="#" onclick="toggleForm()">Click here</a> to sign up.
+    </p>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

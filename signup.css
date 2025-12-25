@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .login-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: zoomIn 1.5s ease;
+  }
+  
+  .login-box {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 320px;
+    color: white;
+  }
+  
+  .login-box input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .login-box input::placeholder {
+    color: #666;
+  }
+  
+  .login-box button {
+    background: rgb(51, 51, 50);
+    border: none;
+    color: white;
+    padding: 0.7rem 1rem;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .login-box button:hover {
+    background: rgb(213, 108, 69);
+  }
+  
+  .create-account-link {
+    margin-top: 1rem;
+    color: #fff;
+  }
+  
+  .create-account-link a {
+    color: #FBA518;
+    text-decoration: underline;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Food Menu</title>
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+  <div class="background-image"></div>
+  <a href="cart.html" class="cart-button">🛒 Cart</a>
+
+  <!-- Birthday Checker -->
+  <div id="birthday-checker">
+    <label for="birthday">Enter your birthday:</label>
+    <input type="date" id="birthday" />
+    <button onclick="checkBirthday()">Check</button>
+    <p id="birthday-message"></p>
+  </div>
+
+  <section class="menu-section">
+    <h1>Most Ordered <span class="highlight">Food Menu</span></h1>
+    <p>Top Picks from Our Customers..</p>
+
+    <!-- Search and Filter -->
+    <div class="search-filter-container">
+      <input type="text" id="searchInput" placeholder="Search food..." />
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="veg">Veg</option>
+        <option value="non-veg">Non-Veg</option>
+        <option value="desserts">Desserts</option>
+      </select>
+    </div>
+
+    <div class="menu-grid" id="menu-container"></div>
+  </section>
+
+  <script src="menu.js"></script>
+</body>
+</html>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">

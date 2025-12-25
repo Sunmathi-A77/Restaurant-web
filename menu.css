@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+ /* color: #333;*/
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom right, #fff5e5, #ffe5e5); /* soft warm bg */
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('image/mb.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+  /*opacity: 0.25;*/
+  filter: blur(2px);
+}
+
+.cart-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #FBA518;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background 0.3s ease;
+  font-family: 'Lato', sans-serif;
+}
+
+.cart-button:hover {
+  background-color: #E52020;
+}
+
+.menu-section {
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.menu-section h1 {
+  font-size: 2.5rem;
+  color: #E52020;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.menu-section p {
+  color: orange;
+}
+
+.highlight {
+  color: #FBA518;
+}
+
+.search-filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.search-filter-container input,
+.search-filter-container select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #FBA518;
+  font-family: 'Lato', sans-serif;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.menu-item {
+  width: 268px;
+  height: 356.64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #F9CB43;
+  border-radius: 10px;
+  padding: 1rem;
+  background: rgba(255, 248, 232, 0.95);
+  box-shadow: 0 0 10px rgba(249, 203, 67, 0.3);
+  backdrop-filter: blur(5px);
+  box-sizing: border-box;
+  transition: transform 0.2s ease-in-out;
+  margin: auto;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(229, 32, 32, 0.4);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.menu-item h3 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.1rem;
+  color: #E52020;
+  font-family: 'Playfair Display', serif;
+}
+
+.menu-item p {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.menu-item .price {
+  color: #E52020;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+
+.menu-item .old-price {
+  text-decoration: line-through;
+  font-size: 0.85rem;
+  color: #A89C29;
+  margin-left: 5px;
+  font-family: 'Lato', sans-serif;
+}
+
+.menu-item button {
+  background: #FBA518;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  transition: background 0.3s;
+  font-family: 'Lato', sans-serif;
+}
+
+.menu-item button:hover {
+  background: #E52020;
+}
+
+#birthday-checker {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background: rgba(255, 243, 220, 0.85);
+  border-radius: 10px;
+  max-width: 400px;
+  margin-inline: auto;
+  font-weight: bold;
+  border: 1px solid #F9CB43;
+  font-family: 'Lato', sans-serif;
+}
+
+#birthday-checker input,
+#birthday-checker button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #E52020;
+  font-family: 'Lato', sans-serif;
+}
+
+#birthday-message {
+  font-size: 1.2rem;
+  color: #FBA518;
+  margin-top: 10px;
+  font-family: 'Playfair Display', serif;
+}

@@ -1,0 +1,58 @@
+/* Background Video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* Body and Container */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Form Container */
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  width: 300px;
+  text-align: center;
+}
+
+/* Input and Button */
+input, button {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.4rem 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #E52020;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #A89C29;
+}
+
+/* Toggle Text */
+.toggle-text {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
